@@ -23,8 +23,8 @@ data = {
 "14": ["ta","ti","tu","ta","bata","tati"],
 "15": ["batu","ra","ri","ru","bara","duri"],
 "16": ["ra","ri","ru","bara","baru","duri"],
-"17": ["hi","ha","hu","paha","dahi","bahu"]
-
+"17": ["hi","ha","hu","paha","dahi","bahu"],
+"18": ["ka","si","sa","ma","ta","ga","na"]
 }
 
 level = 13
