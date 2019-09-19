@@ -27,7 +27,7 @@ data = {
 "18": ["ka","si","sa","ma","ta","ga","na"]
 }
 
-level = 13
+level = 18
 toread = []
 pos = 0
 
@@ -119,7 +119,8 @@ def main():
     screen = pygame.display.set_mode((1080,700))
 
     app1 = pygame.mixer.Sound("applause.wav")
-
+    errowav = pygame.mixer.Sound("error.wav")
+    errowav2 = pygame.mixer.Sound("error2.wav")
 
     formdata()
 
@@ -149,7 +150,8 @@ def main():
                     print("Quitting")
                     pygame.quit()
                 if event.key == pygame.K_DOWN:
-                    pass
+                    playsound(errowav)
+                    
                 if event.key == pygame.K_RIGHT:
                     pos = pos + 1
                     displaytext(screen) 
@@ -180,6 +182,8 @@ def main():
                     formdata()
                     displaytext(screen)
 
+                if event.key == pygame.K_DELETE:
+                    playsound(errowav2)
 
 
 
